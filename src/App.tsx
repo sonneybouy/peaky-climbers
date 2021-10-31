@@ -11,7 +11,7 @@ function App() {
             </header>
             <TopNavBar/>
             <header className="App-body">
-                Coming Soon!
+                Coming Soon!!
             </header>
         </div>
     );
