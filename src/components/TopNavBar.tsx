@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import './topnavbar.css';
 import smallLogo from './../assets/logo69.png';
+import './topnavbar.css';
 
 
 function TopNavBar() {
 
     const [scrolled, setScrolled] = useState(false);
+
     const handleScroll = () => {
         const offset = window.scrollY;
         if (offset > 900) {
@@ -28,7 +29,7 @@ function TopNavBar() {
     return (
         <header className={navBarClasses.join(" ")}>
             <div className="logo">
-                <img src={smallLogo} className="logo"/>
+                <img src={smallLogo} className="logo" alt="logo"/>
             </div>
             <nav className="navigation">
                 <a href={"https://ketwork.github.io/profile/schedule.html"}>Resets</a>
